@@ -10,7 +10,7 @@
         </span>
             </p>
             <p class="card-text">{{ article.body }}</p>
-            <p>Опубликованно: <i>{{ article.created_at }}</i></p>
+            <p>Published: <i>{{ article.created_at }}</i></p>
             <div class="mt-3">
                 <views-component></views-component>
                 <likes-component></likes-component>
