@@ -38,7 +38,7 @@
                                    href="{{ route('article.index') }}">Posts</a>
                             </li>
                         </ul>
-                    <a href="https://github.com/Elvis97rus" class="d-flex justify-content-end">
+                    <a href="https://github.com/Elvis97rus/Laravel_trial-task" class="d-flex justify-content-end">
                         <i class="bi bi-github" style="font-size: 2rem;color: black;"></i>
                     </a>
                 </div>
