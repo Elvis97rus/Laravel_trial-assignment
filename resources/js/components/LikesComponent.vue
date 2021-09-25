@@ -3,19 +3,17 @@
 </template>
 
 <script>
-
+import {mapGetters} from 'vuex'
 export default {
     computed:{
         isLike() {
-            return this.$store.state.likeIt
+            return this.$store.state.article.likeIt
         },
-        articleLikes() {
-            return this.$store.getters.articleLikes
-        },
+        ...mapGetters('article', ['articleLikes'])
     },
     methods: {
         addLike() {
-            this.$store.dispatch('addLike', {
+            this.$store.dispatch('article/addLike', {
                 slug: this.$store.state.slug,
                 increment: this.isLike,
             })

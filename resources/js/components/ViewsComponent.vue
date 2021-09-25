@@ -3,11 +3,10 @@
 </template>
 
 <script>
-
 export default {
     computed:{
         viewsNubmer() {
-            return this.$store.getters.articleViews
+            return this.$store.getters['article/articleViews']
         },
     },
     mounted() {
